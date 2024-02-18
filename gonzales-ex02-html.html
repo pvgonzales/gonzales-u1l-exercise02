@@ -2,33 +2,26 @@
 <html lang="en">
 <head>
     <title>Portfolio</title>
-    <link rel="stylesheet" href="c:\Users\paulagonzales\Downloads\ex\gonzales-ex02-css.css">
+    <link rel="stylesheet" href="gonzales-ex02-css.css">
 </head>
 <body>
     <header class="top" id="top">
-        <div class="header">
+        <div>
             <!--Start of Header Navigation-->
-            <nav class="nav">
-                <div class="container">
-                    <div class="nav-header">
-                        <button type="button" class="toggle" data-toggle="collapse" data-target="#navbar-menu">
-                            <i class="bar"></i>
-                        </button>
-                        <a class="navbar" href="gonzales-ex02-html.html">Gonzales, Paula Victoria R.</a>
-                    </div> <!--End of Header Navigation-->
-                    
-                    <!--Start of navigation links for toggling-->
-                    <div class="nav-menu" id="menu">
-                        <ul class="nav-right" data-in="fadeInDown" data-out="fadeOutUp">
-                            <li class="smooth-trans"></li>
-                            <li class="smooth-menu"><a href="#aboutme">ABOUT ME</a></li>
-                            <li class="smooth-menu"><a href="#projects">PROJECTS</a></li>
-                            <li class="smooth-menu"><a href="#skills">SKILLS</a></li>
-                            <li class="smooth-menu"><a href="#education">EDUCATION</a></li>
-                        </ul>
-                    </div> <!--End of navigation links-->
-                </div>
-            </nav> <!--End of Navigation-->
+                <div>          
+                <!--Start of navigation links for toggling-->
+                <div>
+                    <ul>
+                        <img src="img/logo.png" alt="logo">
+                        <a class="logo" href="gonzales-ex02-html.html"><em><strong>PVG</strong></em></a>
+                        <li class="smooth-menu"><a href="#skills-autobio">AUTOBIOGRAPHY</a></li>
+                        <li class="smooth-menu"><a href="#skills-autobio">SKILLS</a></li>
+                        <li class="smooth-menu"><a href="#projects">PROJECTS</a></li>
+                        
+                    </ul>
+                </div> <!--End of navigation links-->
+            </div>
+             <!--End of Navigation-->
         </div>
     </header> <!--End of Header Navigation-->
 
@@ -47,7 +40,7 @@
                                 I am a student studying Computer Science, and my interests lie in the field of Data Science, Database Administration, and Web Programming.
                             </h3>
                             <div class="row">
-                                <div class="col-1">
+                                <div>
                                     <div class="other-about-info">
                                         <h3>PHONE</h3>
                                         <p>(966) 361-4012</p>
@@ -94,19 +87,19 @@
 
     <!--Start of Projects Section-->
     <section class="projects" id="projects">
-        <div class="projects-info">
+        <div>
             <div class="section-header">
                 <h2>PROJECTS</h2>
             </div>
-            <div class="container">
-                <div class="projects-info">
-                    <div class="isotope">
+            <div>
+                <div>
+                    <div class="zoom">
                         <div class="row">
-                            <div class="col-1">
+                            <div>
                                 <!--PROJECT 1-->
                                 <div class="item">
                                     <img src="<!--LINK OF PICTURE HERE-->" alt="project-img">
-                                    <div class="isotope-overlay">
+                                    <div class="zoom-overlay">
                                         <a href="#projects">
                                             Snake Game <br> Developed using Scratch <br> Year Created: 2022
                                         </a>
@@ -115,7 +108,7 @@
                                 <!--PROJECT 2-->
                                 <div class="item">
                                     <img src="<!--LINK OF PICTURE HERE-->" alt="project-img">
-                                    <div class="isotope-overlay">
+                                    <div class="zoom-overlay">
                                         <a href="#projects">
                                             Logic Gates and Cicuits Game <br> Developed using Java Programming Language <br> Year Created: 2023
                                         </a>
@@ -123,11 +116,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-1">
+                            <div>
                                 <!--PROJECT 3-->
                                 <div class="item">
                                     <img src="<!--LINK OF PICTURE HERE-->" alt="project-img">
-                                    <div class="isotope-overlay">
+                                    <div class="zoom-overlay">
                                         <a href="#projects">
                                             UPLB Dining Recommender <br> Developed using Python <br> Year Created: 2023
                                         </a>
@@ -135,11 +128,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-1">
+                            <div>
                                 <!--PROJECT 4-->
                                 <div class="item">
                                     <img src="<!--LINK OF PICTURE HERE-->" alt="project-img">
-                                    <div class="isotope-overlay">
+                                    <div class="zoom-overlay">
                                         <a href="#projects">
                                             Regression and Interpolation Solver <br> Developed using Python Programming Language <br> Year Created: 2023
                                         </a>
@@ -148,7 +141,7 @@
                                 <!--PROJECT 5-->
                                 <div class="item">
                                     <img src="<!--LINK OF PICTURE HERE-->" alt="project-img">
-                                    <div class="isotope-overlay">
+                                    <div class="zoom-overlay">
                                         <a href="#projects">
                                             Diet Nutrition Planner <br> Developed using R Programming Language <br> Year Created: 2023
                                         </a>
@@ -162,103 +155,91 @@
         </div>
     </section><!--End of Projects Section-->
 
-    <!--Start of Skills Section-->
-    <section class="skills" id="skills">
-        <div class="skills-info">
+    <!--Start of Skills and Autobiography Section-->
+    <section class="skills-autobio" id="skills-autobio">
+        <div>
             <div class="section-header">
-                <h2>SKILLS</h2>
-            </div>
-            <div class="container">
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col">
+                        <h2>SKILLS</h2>
                         <div class="skill-deets">
                             <div class="barWrapper">
-                                <span class="progressive-text">C/C++</span>
+                                <span>C/C++</span>
                                 <div class="progress-txt">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
+                                    <div id="progressc">
+                                        <div class="progress-bar" role="progressbar"></div>
                                     </div>
                                     <h3>75%</h3>
                                 </div>
                             </div>
 
                             <div class="barWrapper">
-                                <span class="progressive-text">Java</span>
+                                <span>Java</span>
                                 <div class="progress-txt">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="65"></div>
+                                    <div id="progressjava">
+                                        <div class="progress-bar" role="progressbar"></div>
                                     </div>
                                     <h3>65%</h3>
                                 </div>
                             </div>
 
                             <div class="barWrapper">
-                                <span class="progressive-text">Python</span>
+                                <span>Python</span>
                                 <div class="progress-txt">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="90"></div>
+                                    <div id="progresspy">
+                                        <div class="progress-bar" role="progressbar"></div>
                                     </div>
                                     <h3>90%</h3>
                                 </div>
                             </div>
 
                             <div class="barWrapper">
-                                <span class="progressive-text">R</span>
+                                <span>R</span>
                                 <div class="progress-txt">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="85"></div>
+                                    <div id="progressr">
+                                        <div class="progress-bar" role="progressbar"></div>
                                     </div>
                                     <h3>85%</h3>
                                 </div>
                             </div>
 
                             <div class="barWrapper">
-                                <span class="progressive-text">HTML-CSS</span>
+                                <span>HTML-CSS</span>
                                 <div class="progress-txt">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="75"></div>
+                                    <div id="progresshtmlcss">
+                                        <div class="progress-bar" role="progressbar"></div>
                                     </div>
                                     <h3>75%</h3>
                                 </div>
                             </div>
 
                             <div class="barWrapper">
-                                <span class="progressive-text">JavaScript</span>
+                                <span>JavaScript</span>
                                 <div class="progress-txt">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="65"></div>
+                                    <div id="progressjs">
+                                        <div class="progress-bar" role="progressbar"></div>
                                     </div>
                                     <h3>65%</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section> <!--End of Skills Section-->
-
-    <section class="education" id="education">
-        <div class="section-header">
-            <h2>EDUCATION</h2>
-        </div>
-        <div class="container">
-            <div class="timeline">
-                <div class="row">
-                    <div class="col-2"> <!--OR COL-1 CHECK-->
-                        <div class="hori-timeline">
+                    <div class="col2">
+                        <h2>AUTOBIOGRAPHY</h2>
+                        <div>
                             <div class="exp-time">
-                                <h2>2022 - Present</h2>
-                                <h3>Bachelor <span>of</span> Science in <span>Computer Science</span></h3>
+                                <h3>I am a student studying Computer Science, and my interests lie in the fields of Data Science, Database Administration, and Web Programming.</h3>
                             </div>
                             <div class="timeline-border">
-                                <i class="circle" aria-hidden="true"></i>
                                 <span class="timeline-hori"></span>
                             </div>
-                            <div class="edu-timeline">
+                            <div>
                                 <div class="timeline-info">
-                                    <h4 class="univ">University of the Philippine</h4>
-                                    <h5>Los Baños, Laguna</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -266,7 +247,7 @@
                 </div>
             </div>
         </div>
-    </section><!--End of Education Section-->
+    </section> <!--End of Skills and Autobiography Section-->
 
     <!--Start of footer-->
     <footer id="footer" class="footer">
