@@ -1,0 +1,347 @@
+/* Overall Style */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: 'Verdana', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #fff;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+.top {
+    position: relative;
+    z-index: 9999;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5ebf2;
+}
+
+/* Navigation and Footer Style */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cdd6df;
+    box-shadow: 0 3px 20px #969fc0;
+}
+  
+ul img{
+    float: left;
+    width: 100px;
+}
+
+.logo {
+    display: inline-block;
+    color: rgb(68, 68, 92);
+    text-align: center;
+    font-size: 24px;
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+
+.smooth-menu {
+    float: right;
+}
+
+.smooth-menu a {
+    display: inline-block;
+    color: rgb(68, 68, 92);
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    text-decoration: none;
+}
+
+.smooth-menu:hover {
+    background-color: rgb(149, 149, 219);
+}
+
+.name {
+    float: left;
+    display: block;
+    color: rgb(68, 68, 92);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.name img {
+    width: 100px;
+}
+
+.name li {
+    float: left;
+}
+
+.back-top a {
+    text-decoration: none;
+}
+
+/* Style for Featured Photo */
+
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background:url(img/feature.png)no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:650px;
+}
+
+.featured:before{
+    position:absolute;
+    content: " ";
+    top:0;
+    left:0;
+    background:rgba(125, 163, 203, 0.65);
+    width:100%;
+    height:100%;
+}
+
+.header-text h2 {
+    color: black;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.header-text h2 span {
+    color: #033668;
+}
+
+.header-text p {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 30px 0 60px;
+    letter-spacing: 1px;
+}
+
+/* Use of flex container */
+
+.row { 
+    display: flex; 
+    flex-direction: row; 
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+} 
+
+.col { 
+    width: 50%; 
+    height: 100vh; 
+    text-align: left; 
+    padding-right: 30px; 
+} 
+
+.col2 { 
+    width: 50%;
+    height: 100vh;
+    padding-left: 30px;
+}
+
+/* Style for Projects */
+
+.projects {
+    border:  1px solid #e5ebf2;
+    padding-top: 50px;
+}
+
+.zoom:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.zoom .item {
+    position:relative;
+    overflow:hidden;
+}
+
+.zoom .item img{
+    width:100%;
+    height:100%;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    padding: 20px;
+}
+.zoom .item:hover img{
+    transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    -o-transform:scale(1.5);
+}
+
+.zoom-overlay{
+    display:flex;
+    position:absolute;
+    flex-direction:row;
+    height:100%;
+    width:100%;
+    background:rgba(126, 150, 175, 0.5);
+    align-items:center;
+    text-transform: uppercase;
+    justify-content:center;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    -webkit-transform:scale(0);
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
+    transform:scale(0);
+}
+
+.zoom-overlay a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.zoom .item:hover .zoom-overlay{
+    top:0;
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+}
+
+/* Style for Skills and Autobiography */
+
+.skills-autobio {
+    border:  1px solid #e5ebf2;
+}
+
+.progress-txt {
+    display: flex;
+}
+
+.progress-txt h3 {
+    width: 10%;
+    color: #0665c3;
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+
+.barWrapper {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#progressps {
+    border-radius:3px;
+    overflow: visible;
+    background: #a0bfca;
+    height:8px;
+    margin-top: 15px;
+    width: 90%;
+    margin-bottom: 37px;
+}
+
+#progresslead {
+    border-radius:3px;
+    overflow: visible;
+    background: #a0bfca;
+    height:8px;
+    margin-top: 15px;
+    width: 80%;
+    margin-bottom: 37px;
+}
+
+#progressorg {
+    border-radius:3px;
+    overflow: visible;
+    background: #a0bfca;
+    height:8px;
+    margin-top: 15px;
+    width: 85%;
+    margin-bottom: 37px;
+}
+
+#progresshtmlcss {
+    border-radius:3px;
+    overflow: visible;
+    background: #a0bfca;
+    height:8px;
+    margin-top: 15px;
+    width: 75%;
+    margin-bottom: 37px;
+}
+
+#progressjs {
+    border-radius:3px;
+    overflow: visible;
+    background: #a0bfca;
+    height:8px;
+    margin-top: 15px;
+    width: 75%;
+    margin-bottom: 37px;
+}
+
+.auto-border {
+    display:  flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+
+span.autobio-hori {
+    display:  inline-block;
+    background: #b2c1ce;
+    height:  1px;
+    width: 620px;
+}
+
+.autobio-header h3 {
+    padding-top: 10px;
+    line-height: 2;
+}
+
+.autobio-info p {
+    line-height: 2.5;
+}
+
+.skill-deets{
+    padding-top: 20px;
+}
